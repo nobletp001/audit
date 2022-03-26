@@ -59,6 +59,7 @@ export default function PageOneE({ navigation }) {
         onChangeText8('')
         onChangeText9('')
         onChangeText15('submited successfuly')
+        navigation.navigate('pagetwog')
 
       
 
