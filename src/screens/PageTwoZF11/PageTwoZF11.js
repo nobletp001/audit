@@ -13,7 +13,7 @@ import {
     Image,
 } from 'react-native';
 import { useSelector } from 'react-redux';
-import image from './w.jpeg'
+import image from '../../assests/w.jpeg'
 
 const DEFAULT_IMAGE = Image.resolveAssetSource(image).uri;
 function HomeScreen() {
