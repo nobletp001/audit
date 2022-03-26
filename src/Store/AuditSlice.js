@@ -219,7 +219,7 @@ export const auditSlice = createSlice({
     initialState,
     reducers: {
         pageoneAction: (state, {payload}) => {
-        
+            // console.log({ payload })
             state.pageone =payload
         },
         pagetwoAction: (state, { payload }) => {
@@ -253,7 +253,7 @@ export const auditSlice = createSlice({
             state.pagetwoE = payload
         },
         pagetwoFAction: (state, { payload }) => {
-// console.log({payload})
+console.log({payload})
             state.pagetwoF = payload
         },
         pagetwoGAction: (state, { payload }) => {

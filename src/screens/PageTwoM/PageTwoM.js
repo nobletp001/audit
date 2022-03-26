@@ -42,7 +42,7 @@ export default function PageTwoM({ navigation }) {
         onChangeText3('')
         onChangeText4('')
         onChangeText5('submited successfuly')
-
+        navigation.navigate('pagetwon')
 
     }
     return (

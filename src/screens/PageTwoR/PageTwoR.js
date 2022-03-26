@@ -44,7 +44,7 @@ export default function PageTwoR({ navigation }) {
         onChangeText4('')
 
         onChangeText15('submited successfuly')
-
+        navigation.navigate('pagetwos')
 
 
     }

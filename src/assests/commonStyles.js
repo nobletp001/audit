@@ -10,7 +10,7 @@ export const commonStyles = StyleSheet.create({
     headerTitleStyle: {
         color: '#fff',
         fontWeight: 'bold',
-        fontSize:13
+        fontSize:10
     },
     headerImageStyle: {
         marginLeft: 'auto',

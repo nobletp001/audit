@@ -64,12 +64,13 @@ const data={
         onChangeText7('')
         onChangeText8('')
         onChangeText9('')
+        onChangeText10('')
         onChangeText11('')
         onChangeText12('')
         onChangeText13('')
         onChangeText15('submited successfuly')
 
-      
+        navigation.navigate('pagetwo')
 
 }
   return (

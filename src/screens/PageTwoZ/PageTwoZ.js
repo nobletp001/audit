@@ -45,7 +45,7 @@ export default function PageOne({ navigation }) {
         onChangeText4('')
       
         onChangeText15('submited successfuly')
-
+        navigation.navigate('pagetwoza')
 
 
     }

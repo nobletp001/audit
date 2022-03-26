@@ -21,47 +21,47 @@ function HomeScreen() {
     const [path, setPath] = React.useState(null)
     const dataState = useSelector((state) => state.audit)
     const pageone = dataState.pageone
-    const pagetwo = dataState.pagetwo?.uri?.length < 1 ? 'love' : dataState.pagetwo?.uri
-    const pagetwoA = dataState.pagetwoA?.uri?.length < 1 ? 'love' : dataState.pagetwoA?.uri
-    const pagetwoB = dataState.pagetwoB?.uri?.length < 1 ? 'love' : dataState.pagetwoB?.uri
-    const pagetwoC = dataState.pagetwoC?.uri?.length < 1 ? 'love' : dataState.pagetwoC?.uri
-    const pagetwoD = dataState.pagetwoD?.uri?.length < 1 ? 'love' : dataState.pagetwoD?.uri
-    const pagetwoE = dataState.pagetwoE?.uri?.length < 1 ? 'love' : dataState.pagetwoE?.uri
+    const pagetwo = dataState.pagetwo?.uri?.length < 1 ? 'lo' : dataState.pagetwo?.uri
+    const pagetwoA = dataState.pagetwoA?.uri?.length < 1 ? 'lo' : dataState.pagetwoA?.uri
+    const pagetwoB = dataState.pagetwoB?.uri?.length < 1 ? 'lo' : dataState.pagetwoB?.uri
+    const pagetwoC = dataState.pagetwoC?.uri?.length < 1 ? 'lo' : dataState.pagetwoC?.uri
+    const pagetwoD = dataState.pagetwoD?.uri?.length < 1 ? 'lo' : dataState.pagetwoD?.uri
+    const pagetwoE = dataState.pagetwoE?.uri?.length < 1 ? 'lo' : dataState.pagetwoE?.uri
     const pagetwoF = dataState.pagetwoF
-    const pagetwoG = dataState.pagetwoG?.uri?.length < 1 ? 'love' : dataState.pagetwoG?.uri
-    const pagetwoH = dataState.pagetwoH?.uri?.length < 1 ? 'love' : dataState.pagetwoH?.uri
-    const pagetwoI = dataState.pagetwoI?.uri?.length < 1 ? 'love' : dataState.pagetwoI?.uri
-    const pagetwoJ = dataState.pagetwoJ?.uri?.length < 1 ? 'love' : dataState.pagetwoJ?.uri
-    const pagetwoK = dataState.pagetwoK?.uri?.length < 1 ? 'love' : dataState.pagetwoK?.uri
-    const pagetwoL = dataState.pagetwoL?.uri?.length < 1 ? 'love' : dataState.pagetwoL?.uri
+    const pagetwoG = dataState.pagetwoG?.uri?.length < 1 ? 'lo' : dataState.pagetwoG?.uri
+    const pagetwoH = dataState.pagetwoH?.uri?.length < 1 ? 'lo' : dataState.pagetwoH?.uri
+    const pagetwoI = dataState.pagetwoI?.uri?.length < 1 ? 'lo' : dataState.pagetwoI?.uri
+    const pagetwoJ = dataState.pagetwoJ?.uri?.length < 1 ? 'lo' : dataState.pagetwoJ?.uri
+    const pagetwoK = dataState.pagetwoK?.uri?.length < 1 ? 'lo' : dataState.pagetwoK?.uri
+    const pagetwoL = dataState.pagetwoL?.uri?.length < 1 ? 'lo' : dataState.pagetwoL?.uri
     const pagetwoM = dataState.pagetwoM
-    const pagetwoN = dataState.pagetwoN?.uri?.length < 1 ? 'love' : dataState.pagetwoN?.uri
-    const pagetwoO = dataState.pagetwoO?.uri?.length < 1 ? 'love' : dataState.pagetwoO?.uri
-    const pagetwoP = dataState.pagetwoP?.uri?.length < 1 ? 'love' : dataState.pagetwoP?.uri
-    const pagetwoQ = dataState.pagetwoQ?.uri?.length < 1 ? 'love' : dataState.pagetwoQ?.uri
+    const pagetwoN = dataState.pagetwoN?.uri?.length < 1 ? 'lo' : dataState.pagetwoN?.uri
+    const pagetwoO = dataState.pagetwoO?.uri?.length < 1 ? 'lo' : dataState.pagetwoO?.uri
+    const pagetwoP = dataState.pagetwoP?.uri?.length < 1 ? 'lo' : dataState.pagetwoP?.uri
+    const pagetwoQ = dataState.pagetwoQ?.uri?.length < 1 ? 'lo' : dataState.pagetwoQ?.uri
     const pagetwoR = dataState.pagetwoR
-    const pagetwoS = dataState.pagetwoS?.uri?.length < 1 ? 'love' : dataState.pagetwoS?.uri
-    const pagetwoT = dataState.pagetwoT?.uri?.length < 1 ? 'love' : dataState.pagetwoT?.uri
-    const pagetwoU = dataState.pagetwoU?.uri?.length < 1 ? 'love' : dataState.pagetwoU?.uri
-    const pagetwoV = dataState.pagetwoV?.uri?.length < 1 ? 'love' : dataState.pagetwoV?.uri
-    const pagetwoX = dataState.pagetwoX?.uri?.length < 1 ? 'love' : dataState.pagetwoX?.uri
-    const pagetwoY = dataState.pagetwoY?.uri?.length < 1 ? 'love' : dataState.pagetwoY?.uri
+    const pagetwoS = dataState.pagetwoS?.uri?.length < 1 ? 'lo' : dataState.pagetwoS?.uri
+    const pagetwoT = dataState.pagetwoT?.uri?.length < 1 ? 'lo' : dataState.pagetwoT?.uri
+    const pagetwoU = dataState.pagetwoU?.uri?.length < 1 ? 'lo' : dataState.pagetwoU?.uri
+    const pagetwoV = dataState.pagetwoV?.uri?.length < 1 ? 'lo' : dataState.pagetwoV?.uri
+    const pagetwoX = dataState.pagetwoX?.uri?.length < 1 ? 'lo' : dataState.pagetwoX?.uri
+    const pagetwoY = dataState.pagetwoY?.uri?.length < 1 ? 'lo' : dataState.pagetwoY?.uri
     const pagetwoZ = dataState.pagetwoZ
-    const pagetwoZA = dataState.pagetwoZA?.uri?.length < 1 ? 'love' : dataState.pagetwoZA?.uri
-    const pagetwoZB = dataState.pagetwoZB?.uri?.length < 1 ? 'love' : dataState.pagetwoZB?.uri
-    const pagetwoZC = dataState.pagetwoZC?.uri?.length < 1 ? 'love' : dataState.pagetwoZC?.uri
-    const pagetwoZD = dataState.pagetwoZD?.uri?.length < 1 ? 'love' : dataState.pagetwoZD?.uri
-    const pagetwoZE = dataState.pagetwoZE?.uri?.length < 1 ? 'love' : dataState.pagetwoZE?.uri
+    const pagetwoZA = dataState.pagetwoZA?.uri?.length < 1 ? 'lo' : dataState.pagetwoZA?.uri
+    const pagetwoZB = dataState.pagetwoZB?.uri?.length < 1 ? 'lo' : dataState.pagetwoZB?.uri
+    const pagetwoZC = dataState.pagetwoZC?.uri?.length < 1 ? 'lo' : dataState.pagetwoZC?.uri
+    const pagetwoZD = dataState.pagetwoZD?.uri?.length < 1 ? 'lo' : dataState.pagetwoZD?.uri
+    const pagetwoZE = dataState.pagetwoZE?.uri?.length < 1 ? 'lo' : dataState.pagetwoZE?.uri
     const pagetwoZF = dataState.pagetwoZF
-    const pagetwoZF1 = dataState.pagetwoZF1?.uri?.length < 1 ? 'love' : dataState.pagetwoZF1?.uri
-    const pagetwoZF2 = dataState.pagetwoZF2?.uri?.length < 1 ? 'love' : dataState.pagetwoZF2?.uri
-    const pagetwoZF3 = dataState.pagetwoZF3?.uri?.length < 1 ? 'love' : dataState.pagetwoZF3?.uri
-    const pagetwoZF4 = dataState.pagetwoZF4?.uri?.length < 1 ? 'love' : dataState.pagetwoZF4?.uri
-    const pagetwoZF5 = dataState.pagetwoZF5?.uri?.length < 1 ? 'love' : dataState.pagetwoZF5?.uri
-    const pagetwoZF6 = dataState.pagetwoZF6?.uri?.length < 1 ? 'love' : dataState.pagetwoZF6?.uri
-    const pagetwoZF7 = dataState.pagetwoZF7?.uri?.length < 1 ? 'love' : dataState.pagetwoZF7?.uri
-    const pagetwoZF8 = dataState.pagetwoZF8?.uri?.length < 1 ? 'love' : dataState.pagetwoZF8?.uri
-    const pagetwoZF9 = dataState.pagetwoZF9?.uri?.length < 1 ? 'love' : dataState.pagetwoZF9?.uri
+    const pagetwoZF1 = dataState.pagetwoZF1?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF1?.uri
+    const pagetwoZF2 = dataState.pagetwoZF2?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF2?.uri
+    const pagetwoZF3 = dataState.pagetwoZF3?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF3?.uri
+    const pagetwoZF4 = dataState.pagetwoZF4?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF4?.uri
+    const pagetwoZF5 = dataState.pagetwoZF5?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF5?.uri
+    const pagetwoZF6 = dataState.pagetwoZF6?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF6?.uri
+    const pagetwoZF7 = dataState.pagetwoZF7?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF7?.uri
+    const pagetwoZF8 = dataState.pagetwoZF8?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF8?.uri
+    const pagetwoZF9 = dataState.pagetwoZF9?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF9?.uri
     const pagetwoZF10 = dataState.pagetwoZF10
 // console.log(pagetwoZF10)
 
@@ -97,72 +97,72 @@ function HomeScreen() {
                 </tr>
                 <tr>
                     <td>FA LOCATION</td>
-                    <td> ${pageone.text.length > 1 ? pageone.text : 'N/A'}</td>
+                    <td> ${pageone.text ? pageone.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
                     <td>USID</td>
-                     <td> ${pageone.text1.length > 1 ? pageone.text1 : 'N/A'}</td>
+                     <td> ${pageone.text1 ? pageone.text1 : 'N/A'}</td>
 
                 </tr>
                   <tr>
                     <td>SITE ADDRESS</td>
-                     <td> ${pageone.text2.length > 1 ? pageone.text2 : 'N/A'}</td>
+                     <td> ${pageone.text2 ? pageone.text2 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>City, State, Zip</td>
-                     <td> ${pageone.text3.length > 1 ? pageone.text3 : 'N/A'}</td>
+                     <td> ${pageone.text3 ? pageone.text3 : 'N/A'}</td>
 
                 </tr>
  <tr>
                     <td>Site Owner: id: Crow, ATC, etc</td>
-                     <td> ${pageone.text4.length > 1 ? pageone.text4 : 'N/A'}</td>
+                     <td> ${pageone.text4 ? pageone.text4 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Gate codes / Access code</td>
-                     <td> ${pageone.text5.length > 1 ? pageone.text5 : 'N/A'}</td>
+                     <td> ${pageone.text5 ? pageone.text5 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Access/Location Information</td>
-                     <td> ${pageone.text6.length > 1 ? pageone.text6 : 'N/A'}</td>
+                     <td> ${pageone.text6 ? pageone.text6 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Site Technician / Contact</td>
-                     <td> ${pageone.text7.length > 1 ? pageone.text7 : 'N/A'}</td>
+                     <td> ${pageone.text7 ? pageone.text7 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Date of Site Visit</td>
-                     <td> ${pageone.text8.length > 1 ? pageone.text8 : 'N/A'}</td>
+                     <td> ${pageone.text8 ? pageone.text8 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Vendor</td>
-                     <td> ${pageone.text9.length > 1 ? pageone.text9 : 'N/A'}</td>
+                     <td> ${pageone.text9 ? pageone.text9 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Tech Performing the Audit (First / Last Name)</td>
-                     <td> ${pageone.text10.length > 1 ? pageone.text10 : 'N/A'}</td>
+                     <td> ${pageone.text10 ? pageone.text10 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td> Did Auditor Sign In AND Out of the Logbook?</td>
-                     <td> ${pageone.text11.length > 1 ? pageone.text11 : 'N/A'}</td>
+                     <td> ${pageone.text11 ? pageone.text11 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Access issues? (COVID restrictions)</td>
-                     <td> ${pageone.text12.length > 1 ? pageone.text12 : 'N/A'}</td>
+                     <td> ${pageone.text12 ? pageone.text12 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Is Existing AT&T Equipment Installed on Site in Shelter, Tenant Improvement, OEM Outdoor Cabinets, or Hybrid Outdoor Cabinets?:</td>
-                     <td> ${pageone.text13.length > 1 ? pageone.text13 : 'N/A'}</td>
+                     <td> ${pageone.text13 ? pageone.text13 : 'N/A'}</td>
 
                 </tr>
             </table>
@@ -272,7 +272,7 @@ N/A
                 </tr>
                 <tr>
                     <td style="font-size: 12px;">Fiber terminal/Ped (Reg View)</td>
-                    <td> ${pagetwoF.text.length > 1 ? pagetwoF.text : 'N/A'}</td>
+                    <td> ${pagetwoF.text ? pagetwoF.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
@@ -280,49 +280,49 @@ N/A
 What direction is the Wireline Fiber Demarc facing 
 (North, South, West or East)?
 </td>
-                     <td> ${pagetwoF.text1.length > 1 ? pagetwoF.text1 : 'N/A'}</td>
+                     <td> ${pagetwoF.text1 ? pagetwoF.text1 : 'N/A'}</td>
 
                 </tr>
                   <tr>
                     <td style="font-size: 12px;">How many fibers are terminated on the front of the existing fiber terminal & how many open ports are spare? Need 4 open ports for the new dark fibers</td>
-                     <td> ${pagetwoF.text2.length > 1 ? pagetwoF.text2 : 'N/A'}</td>
+                     <td> ${pagetwoF.text2 ? pagetwoF.text2 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td style="font-size: 12px;">If no, are there any spare to place new Fiber terminal?</td>
-                     <td> ${pagetwoF.text3.length > 1 ? pagetwoF.text3 : 'N/A'}</td>
+                     <td> ${pagetwoF.text3 ? pagetwoF.text3 : 'N/A'}</td>
 
                 </tr>
  <tr>
                     <td style="font-size: 12px;">Is there enough space in the conduit(s) between the NEMA box and the Mobility shelter or cabinet (if outdoor site) for two 2 single fiber or one 4 fiber jumper?</td>
-                     <td> ${pagetwoF.text4.length > 1 ? pagetwoF.text4 : 'N/A'}</td>
+                     <td> ${pagetwoF.text4 ? pagetwoF.text4 : 'N/A'}</td>
 
                 </tr>
                  <tr style="font-size: 12px;">
                     <td>Is there mule pull strings available to pull new fibers to equipment room through conduits?</td>
-                     <td> ${pagetwoF.text5.length > 1 ? pagetwoF.text5 : 'N/A'}</td>
+                     <td> ${pagetwoF.text5 ? pagetwoF.text5 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td style="font-size: 12px;">Length of Fiber drop cable needed from Fiber Demarc to new 8300 Dafi Equipment</td>
-                     <td> ${pagetwoF.text6.length > 1 ? pagetwoF.text6 : 'N/A'}</td>
+                     <td> ${pagetwoF.text6 ? pagetwoF.text6 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td style="font-size: 12px;">Identify location for new 12 fiber LGX (Note: required on all sites. Preferable to be installed in same rack as DaFi equipment.) Dimension: 19 (W) x 12 (D) X 4(H) [in]
 2 rack units needed
 </td>
-                     <td> ${pagetwoF.text7.length > 1 ? pagetwoF.text7 : 'N/A'}</td>
+                     <td> ${pagetwoF.text7 ? pagetwoF.text7 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td style="font-size: 12px;">New LGX location marked? (Take Photo)	</td>
-                     <td> ${pagetwoF.text8.length > 1 ? pagetwoF.text8 : 'N/A'}</td>
+                     <td> ${pagetwoF.text8 ? pagetwoF.text8 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td style="font-size: 12px;">What direction is the New LGX location facing (North, South, West or East)? </td>
-                     <td> ${pagetwoF.text9.length > 1 ? pagetwoF.text9 : 'N/A'}</td>
+                     <td> ${pagetwoF.text9 ? pagetwoF.text9 : 'N/A'}</td>
 
                 </tr>     
             </table>
@@ -419,29 +419,29 @@ N/A
                 </tr>
                 <tr>
                     <td >Is there room in any rack, except the CRAN active rack (if applicable), for a new 12 fiber LGX panel for Mobility (Max of 2 Rack Units)? Note: Preferable in existing rack housing BBUs. Please take photo of entire rack</td>
-                    <td> ${pagetwoM.text.length > 1 ? pagetwoM.text : 'N/A'}</td>
+                    <td> ${pagetwoM.text ? pagetwoM.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
                     <td >
 Verified new 8300 DaFi & New 12 fiber LGX can be placed in same rack? (Yes/No) (Take Photo) – *Note Dimensions: 19 (W) x 12 (D) X 11(H) [in] 6 RU
 </td>
-                     <td> ${pagetwoM.text1.length > 1 ? pagetwoM.text1 : 'N/A'}</td>
+                     <td> ${pagetwoM.text1 ? pagetwoM.text1 : 'N/A'}</td>
 
                 </tr>
                   <tr>
                     <td >If yes, was space reserved for the new Mobility LGX by marking off with tape. (Take Photo): </td>
-                     <td> ${pagetwoM.text2.length > 1 ? pagetwoM.text2 : 'N/A'}</td>
+                     <td> ${pagetwoM.text2 ? pagetwoM.text2 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td >If no, identify equipment to be decommissioned to make space</td>
-                     <td> ${pagetwoM.text3.length > 1 ? pagetwoM.text3 : 'N/A'}</td>
+                     <td> ${pagetwoM.text3 ? pagetwoM.text3 : 'N/A'}</td>
 
                 </tr>
  <tr>
                     <td >What will be the fiber jumper length from the new 12 fiber Mobility LGX to the existing Telco LGX?</td>
-                     <td> ${pagetwoM.text4.length > 1 ? pagetwoM.text4 : 'N/A'}</td>
+                     <td> ${pagetwoM.text4 ? pagetwoM.text4 : 'N/A'}</td>
 
                 </tr>
               
@@ -514,26 +514,26 @@ N/A
                 </tr>
                 <tr>
                     <td style="font-size: 12px;">Is there room in any rack, except the CRAN active & passive racks (if applicable), for a new 8300 DaFi Dimension: 19 (W) x 12 (D) X 7(H) [in] (4 Rack Units)? Note: Preferable in existing rack housing BBUs. Please take photo of entire rack. TAPE 8300 LOCATION WITH BLUE TAPE AND LABEL – “8300 DaFi Equipment</td>
-                    <td> ${pagetwoR.text.length > 1 ? pagetwoR.text : 'N/A'}</td>
+                    <td> ${pagetwoR.text ? pagetwoR.text : 'N/A'}</td>
                 </tr>
                 <tr>
                     <td style="font-size: 14px;">
 - It is preferable that the new 8300 DaFi & 12 fiber LGX be placed in the same rack.  If yes, was space reserved for the new Mobility LGX by marking off with Blue Tape and Labeling “New LGX Equipment”? 
 </td>
-                     <td> ${pagetwoR.text1.length > 1 ? pagetwoR.text1 : 'N/A'}</td>
+                     <td> ${pagetwoR.text1 ? pagetwoR.text1 : 'N/A'}</td>
                 </tr>
                   <tr>
                     <td style="font-size: 14px;">If no, did you identify equipment to be decommissioned to make space	 and take photo </td>
-                     <td> ${pagetwoR.text2.length > 1 ? pagetwoR.text2 : 'N/A'}</td>
+                     <td> ${pagetwoR.text2 ? pagetwoR.text2 : 'N/A'}</td>
                 </tr>
                  <tr>
                     <td style="font-size: 14px;">Can power and ground be provided for the new 8300 DaFi? (Yes/No)</td>
-                     <td> ${pagetwoR.text3.length > 1 ? pagetwoR.text3 : 'N/A'}</td>
+                     <td> ${pagetwoR.text3 ? pagetwoR.text3 : 'N/A'}</td>
 
                 </tr>
  <tr>
                     <td style="font-size: 14px;">What will be the jumper length from the new 8300 DaFi to the new 12 fiber Mobility LGX? </td>
-                     <td> ${pagetwoR.text4.length > 1 ? pagetwoR.text4 : 'N/A'}</td>
+                     <td> ${pagetwoR.text4 ? pagetwoR.text4 : 'N/A'}</td>
                 </tr>
             </table>
       </div>
@@ -635,29 +635,29 @@ N/A
                 </tr>
                 <tr>
                     <td> How many 5G NR 6630 BBUs are there and where are they located?</td>
-                    <td> ${pagetwoZ.text.length > 1 ? pagetwoZ.text : 'N/A'}</td>
+                    <td> ${pagetwoZ.text ? pagetwoZ.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
                     <td>
   How many 5G NR 6630 BBUs are there and where are they located?
 </td>
-                     <td> ${pagetwoZ.text1.length > 1 ? pagetwoZ.text1 : 'N/A'}</td>
+                     <td> ${pagetwoZ.text1 ? pagetwoZ.text1 : 'N/A'}</td>
 
                 </tr>
                   <tr>
                     <td>- How many LTE 5216 BBUs are there and where are they located?  </td>
-                     <td> ${pagetwoZ.text2.length > 1 ? pagetwoZ.text2 : 'N/A'}</td>
+                     <td> ${pagetwoZ.text2 ? pagetwoZ.text2 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>If not in the same rack, what will be the jumper length be from the LTE 5216 BBUs to the new 8300 DaFi?</td>
-                     <td> ${pagetwoZ.text3.length > 1 ? pagetwoZ.text3 : 'N/A'}</td>
+                     <td> ${pagetwoZ.text3 ? pagetwoZ.text3 : 'N/A'}</td>
 
                 </tr>
  <tr>
                     <td>Verify conduit has enough room available to pull 2 additional fibers (Yes/No) </td>
-                     <td> ${pagetwoZ.text4.length > 1 ? pagetwoZ.text4 : 'N/A'}</td>
+                     <td> ${pagetwoZ.text4 ? pagetwoZ.text4 : 'N/A'}</td>
 
                 </tr>
 
@@ -753,47 +753,47 @@ N/A
                 </tr>
                 <tr>
                     <td>Power plant brand and model</td>
-                    <td> ${pagetwoZF.text.length > 1 ? pagetwoZF.text : 'N/A'}</td>
+                    <td> ${pagetwoZF.text ? pagetwoZF.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
                     <td>Main Power plant voltage (48V or 24V)</td>
-                     <td> ${pagetwoZF.text1.length > 1 ? pagetwoZF.text1 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text1 ? pagetwoZF.text1 : 'N/A'}</td>
 
                 </tr>
                   <tr>
                     <td>Rectifier count</td>
-                     <td> ${pagetwoZF.text2.length > 1 ? pagetwoZF.text2 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text2 ? pagetwoZF.text2 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Converter count</td>
-                     <td> ${pagetwoZF.text3.length > 1 ? pagetwoZF.text3 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text3 ? pagetwoZF.text3 : 'N/A'}</td>
 
                 </tr>
  <tr>
                     <td>Breaker slots available (48V/24V)</td>
-                     <td> ${pagetwoZF.text4.length > 1 ? pagetwoZF.text4 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text4 ? pagetwoZF.text4 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Is there a remote breaker panel? What model and how many empty slots?</td>
-                     <td> ${pagetwoZF.text5.length > 1 ? pagetwoZF.text5 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text5 ? pagetwoZF.text5 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Battery Type?</td>
-                     <td> ${pagetwoZF.text6.length > 1 ? pagetwoZF.text6 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text6 ? pagetwoZF.text6 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Battery Date of Manufacturing/Installation</td>
-                     <td> ${pagetwoZF.text7.length > 1 ? pagetwoZF.text7 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text7 ? pagetwoZF.text7 : 'N/A'}</td>
 
                 </tr>
                  <tr>
                     <td>Battery Count?</td>
-                     <td> ${pagetwoZF.text8.length > 1 ? pagetwoZF.text8 : 'N/A'}</td>
+                     <td> ${pagetwoZF.text8 ? pagetwoZF.text8 : 'N/A'}</td>
 
                 </tr>
                 
