@@ -133,8 +133,8 @@ export default function PageTwoZF4({ navigation }) {
             console.log("Camera & storage permission given");
 
             let options = {
-                maxWidth: 300,
-                maxHeight: 300,
+                  maxWidth: 300,
+              maxHeight: 300,
                 storageOptions: {
                     skipBackup: true,
                     path: 'images',
