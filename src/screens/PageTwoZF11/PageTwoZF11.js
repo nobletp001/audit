@@ -13,7 +13,7 @@ import {
     Image,
 } from 'react-native';
 import { useSelector } from 'react-redux';
-import image from '../../assests/w.jpeg'
+import image from '../../../assets/w.jpeg'
 
 const DEFAULT_IMAGE = Image.resolveAssetSource(image).uri;
 function HomeScreen() {
@@ -1235,8 +1235,9 @@ html { font: 16px/1 'Open Sans', sans-serif;
 }
 #images{
     object-position: center;
-    width: 500px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
+    object-fit:none;
 }
 #footerImage{
     display: flex;

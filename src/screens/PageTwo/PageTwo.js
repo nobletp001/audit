@@ -132,6 +132,8 @@ export default function PageTwo({ navigation }) {
             console.log("Camera & storage permission given");
 
           let options = {
+              maxWidth: 300,
+              maxHeight: 300,
             storageOptions: {
                 skipBackup: true,
                 path: 'images',
@@ -212,7 +214,7 @@ export default function PageTwo({ navigation }) {
                   size={60}
                   color="#214d77"
                   iconStyle={{}}
-                  onPress={() => navigation.navigate('pagetwoa')}
+                  onPress={() => navigation.navigate('pagetwozf11')}
               />
           </TouchableOpacity>
           <Modal
