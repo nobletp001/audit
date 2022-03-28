@@ -1228,16 +1228,18 @@ html { font: 16px/1 'Open Sans', sans-serif;
     margin-bottom: 10px;
 }
 #imgCon{
- height: 310px;   
+ height: 280px;   
  display: flex;
  align-items: center;
  justify-content: center;
+ padding:5px
 }
 #images{
     object-position: center;
     width: 100%;
     height: 100%;
-    object-fit:none;
+    object-fit:contain;
+   
 }
 #footerImage{
     display: flex;

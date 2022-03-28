@@ -50,8 +50,9 @@ export default function PageTwoZF5({ navigation }) {
             customButtons: [
                 { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
             ],
-            maxWidth: 256,
-            maxHeight: 256,
+            maxWidth: 1000,
+            maxHeight: 1000,
+            quality: 1,
             storageOptions: {
                 skipBackup: true,
                 path: 'images'
@@ -133,8 +134,9 @@ export default function PageTwoZF5({ navigation }) {
             console.log("Camera & storage permission given");
 
             let options = {
-                maxWidth: 300,
-                maxHeight: 300,
+                maxWidth: 1000,
+                maxHeight: 1000,
+                quality: 1,
                 storageOptions: {
                     skipBackup: true,
                     path: 'images',

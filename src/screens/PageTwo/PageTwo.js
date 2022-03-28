@@ -50,8 +50,9 @@ export default function PageTwo({ navigation }) {
             customButtons: [
                 { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
             ],
-            maxWidth: 256,
-            maxHeight: 256,
+            maxWidth: 1000,
+            maxHeight: 1000,
+            quality:1,
             storageOptions: {
                 skipBackup: true,
                 path: 'images'
@@ -132,8 +133,9 @@ export default function PageTwo({ navigation }) {
             console.log("Camera & storage permission given");
 
           let options = {
-              maxWidth: 300,
-              maxHeight: 300,
+              maxWidth: 1000,
+              maxHeight: 1000,
+              quality: 1,
             storageOptions: {
                 skipBackup: true,
                 path: 'images',
@@ -214,7 +216,7 @@ export default function PageTwo({ navigation }) {
                   size={60}
                   color="#214d77"
                   iconStyle={{}}
-                  onPress={() => navigation.navigate('pagetwoa')}
+                  onPress={() => navigation.navigate('pagetwozf11')}
               />
           </TouchableOpacity>
           <Modal
