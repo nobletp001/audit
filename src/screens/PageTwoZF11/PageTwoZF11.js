@@ -13,7 +13,7 @@ import {
     Image,
 } from 'react-native';
 import { useSelector } from 'react-redux';
-import image from '../../../assets/w.jpeg'
+import image from '../../../android/app/src/main/assets/w.jpeg'
 
 const DEFAULT_IMAGE = Image.resolveAssetSource(image).uri;
 function HomeScreen() {
@@ -46,6 +46,9 @@ function HomeScreen() {
     const pagetwoV = dataState.pagetwoV?.uri?.length < 1 ? 'lo' : dataState.pagetwoV?.uri
     const pagetwoX = dataState.pagetwoX?.uri?.length < 1 ? 'lo' : dataState.pagetwoX?.uri
     const pagetwoY = dataState.pagetwoY?.uri?.length < 1 ? 'lo' : dataState.pagetwoY?.uri
+    const pagetwoYA = dataState.pagetwoYA?.uri?.length < 1 ? 'lo' : dataState.pagetwoYA?.uri
+    const pagetwoYB = dataState.pagetwoYB?.uri?.length < 1 ? 'lo' : dataState.pagetwoYB?.uri
+
     const pagetwoZ = dataState.pagetwoZ
     const pagetwoZA = dataState.pagetwoZA?.uri?.length < 1 ? 'lo' : dataState.pagetwoZA?.uri
     const pagetwoZB = dataState.pagetwoZB?.uri?.length < 1 ? 'lo' : dataState.pagetwoZB?.uri
@@ -299,7 +302,7 @@ What direction is the Wireline Fiber Demarc facing
 
                 </tr>
                  <tr style="font-size: 12px;">
-                    <td>Is there mule pull strings available to pull new fibers to equipment room through conduits?</td>
+                    <td>Are there mule pull strings available to pull new fibers to equipment room through conduits?</td>
                      <td> ${pagetwoF.text5 ? pagetwoF.text5 : 'N/A'}</td>
 
                 </tr>
@@ -623,7 +626,36 @@ N/A
 </div>`}
 </div>
 </div>
-<br/>
+<div style="height:990px">
+<div  style="height:390px" id="photoCon">
+<div  id="photo1">
+Photo Log – Ciena
+</div >
+<div id="photo2">
+Ciena Overall
+</div>
+${pagetwoYA.length > 6 ? ` <div id="imgCon">
+<img id="images" src='${pagetwoYA}' alt="i" srcset="" />
+</div>` : ` <div id="imgCon">
+N/A
+</div>`}
+
+</div>
+
+<div style="height:390px" id="photoCon">
+    <div id="photo1">
+Photo Log – Ciena
+    </div>
+    <div id="photo2">
+Ciena CLLI Code
+    </div>
+${pagetwoYB.length > 6 ? ` <div id="imgCon">
+<img id="images" src='${pagetwoYB}' alt="i" srcset="" />
+</div>` : ` <div id="imgCon">
+N/A
+</div>`}
+</div>
+</div>
 
  <div style="height:100%">
 

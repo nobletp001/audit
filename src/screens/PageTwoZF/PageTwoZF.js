@@ -260,7 +260,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         width: '100%',
         height: 40,
-        borderColor: 'grey'
+        borderColor: 'grey',
+        color: 'black'
+
         // backgroundColor:'black'
 
     },
@@ -269,7 +271,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         width: '100%',
         height: 75,
-        borderColor: 'grey'
+        borderColor: 'grey',
+        color: 'black'
+
         // backgroundColor:'black'
 
     },

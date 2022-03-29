@@ -133,6 +133,13 @@ const initialState = {
         
         uri: ''
     },
+    pagetwoYA: {
+
+        uri: ''
+    }, pagetwoYB: {
+
+        uri: ''
+    },
     pagetwoZ: {
         text: '',
         text1: '',
@@ -344,6 +351,16 @@ console.log({payload})
             // console.log({ payload })
             state.pagetwoY = payload
         },
+        pagetwoYAAction: (state, { payload }) => {
+
+            // console.log({ payload })
+            state.pagetwoYA = payload
+        }, 
+        pagetwoYBAction: (state, { payload }) => {
+
+            // console.log({ payload })
+            state.pagetwoYB = payload
+        },
         pagetwoZAction: (state, { payload }) => {
             // console.log({ payload })
             state.pagetwoZ = payload
@@ -458,6 +475,8 @@ export const { pageoneAction, pagetwoAction, pagetwoAAction,
     pagetwoVAction,
     pagetwoXAction,
     pagetwoYAction,
+    pagetwoYAAction,
+    pagetwoYBAction,
     pagetwoZAction,
     pagetwoZAAction,
      pagetwoZBAction,

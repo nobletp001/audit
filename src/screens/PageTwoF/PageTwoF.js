@@ -265,7 +265,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         width: '100%',
         borderColor: 'grey',
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        color: 'black'
+
 
         // backgroundColor:'black'
 
@@ -276,7 +278,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 75,
         borderColor: 'grey',
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        color: 'black'
+
 
         // backgroundColor:'black'
 
@@ -287,7 +291,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 95,
         borderColor: 'grey',
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        color: 'black'
+
 
         // backgroundColor:'black'
 

@@ -179,7 +179,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 60,
         borderColor: 'grey',
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        color: 'black'
+
         // backgroundColor:'black'
 
     },
@@ -189,7 +191,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 120,
         borderColor: 'grey',
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        color: 'black'
+
         // backgroundColor:'black'
 
     },
@@ -199,7 +203,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 90,
         borderColor: 'grey',
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        color: 'black'
+
 
         
         // backgroundColor:'black'

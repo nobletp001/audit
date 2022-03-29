@@ -14,7 +14,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { PermissionsAndroid } from 'react-native';
 import { useDispatch } from 'react-redux';
-import {    pagetwoYAction } from '../../Store/AuditSlice';
+import {  pagetwoZAAction } from '../../Store/AuditSlice';
 
 
 // const createFormData = (photo, body) => {
@@ -34,7 +34,7 @@ import {    pagetwoYAction } from '../../Store/AuditSlice';
 //     return data;
 // };
 
-export default function PageTwoY({ navigation }) {
+export default function PageTwoYA({ navigation }) {
 
     const [modalVisible, setModalVisible] = React.useState(false);
     const dispatch = useDispatch()
@@ -91,7 +91,7 @@ export default function PageTwoY({ navigation }) {
                         uri: asset.uri
                     })
 
-                    dispatch(   pagetwoYAction({
+                    dispatch( pagetwoZAAction({
                         uri: asset.uri
                     }))
                 });
@@ -162,7 +162,7 @@ export default function PageTwoY({ navigation }) {
                             uri: asset.uri
                         })
 
-                        dispatch(   pagetwoYAction({
+                        dispatch( pagetwoZAAction({
                             uri: asset.uri
                         }))
                     });
@@ -217,7 +217,7 @@ export default function PageTwoY({ navigation }) {
                     size={60}
                     color="#214d77"
                     iconStyle={{}}
-                    onPress={() => navigation.navigate('pagetwoya')}
+                    onPress={() => navigation.navigate('pagetwoyb')}
                 />
             </TouchableOpacity>
             <Modal
