@@ -11,6 +11,7 @@ import {
     TouchableOpacity,
     View,
     Image,
+    Platform
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import image from '../../../android/app/src/main/assets/w.jpeg'
@@ -84,7 +85,7 @@ function HomeScreen() {
           <head>
             <meta charset="utf-8">
             <title>Invoice</title>
-            <link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+            <link rel="license" >
             <style>
            ${htmlStyles}
             </style>
@@ -172,7 +173,7 @@ function HomeScreen() {
             
     <div class="footer" style="font-size: 12px;">
                 <div id="footerImage">
-                <img src='${DEFAULT_IMAGE}' alt="images" id="footerImg" srcset="">
+                <img src='https://famesfx.com/footerlogo.jpeg' alt="images" id="footerImg" srcset="">
                 </div>
                 <p>@ 2021AT&T intellectual Property. All rights reserved. AT&T and the logo are trademarks of AT&T intellectual
                     Property</p>
@@ -982,33 +983,34 @@ Additional Photos
           </body>
         </html>
       `;
-    const askPermission = () => {
-        async function requestExternalWritePermission() {
-            try {
-                const granted = await PermissionsAndroid.request(
-                    PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
-                    {
-                        title: 'Pdf creator needs External Storage Write Permission',
-                        message:
-                            'Pdf creator needs access to Storage data in your SD Card',
-                    }
-                );
-                if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-                    createPDF();
-                } else {
-                    alert('WRITE_EXTERNAL_STORAGE permission denied');
+    const fRequestAndroidPermission = async () => {
+        // Refer to https://reactnative.dev/docs/permissionsandroid for further details on permsissions 
+        try {
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
+                {
+                    title: "Audit Permission Request",
+                    message: "Audit needs access to your storage so you can save files to your device.",
+                    buttonNeutral: "Ask Me Later",
+                    buttonNegative: "Cancel",
+                    buttonPositive: "OK"
                 }
-            } catch (err) {
-                alert('Write permission err', err);
-                console.warn(err);
+            );
+
+            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+                console.log("permission is granted");
+                return true;
+            } else {
+                console.log("permission denied");
+                return false;
             }
+        } catch (err) {
+            console.error("fRequestAndroidPermission error:", err);
+            return false;
         }
-        if (Platform.OS === 'android') {
-            requestExternalWritePermission();
-        } else {
-            createPDF();
-        }
-    }
+    };
+
+   
     const createPDF = async () => {
         setLoading('Loading...  Kindly wait, it preparing pdf')
         setPath(null)
@@ -1018,10 +1020,19 @@ Additional Photos
             //File Name
             fileName: 'audit2' + uuid.v4(),
             //File directory
-            directory: 'Download',
+            directory: Platform.OS === 'ios' ? 'Documents' :'Download',
 
             base64: true
         };
+      
+        if (Platform.OS === "android") {
+            const permissionGranted = await fRequestAndroidPermission();
+            if (!permissionGranted) {
+                console.log("access was refused")
+                return;
+            }
+        }
+
 
         let file = await RNHTMLtoPDF.convert(options)
         setLoading('')
@@ -1050,13 +1061,17 @@ Additional Photos
             <View style={styles.card}>
 
                 <TouchableOpacity style={styles.button}
-                    onPress={askPermission}
+                    onPress={createPDF}
                 >
                     <Text style={styles.headingLight}> Download PDF</Text>
                 </TouchableOpacity>
             </View>
             <Text style={{ fontSize: 12, color: 'red' }}>{loading}</Text>
      <Text style={{fontSize:12, color:'red'}}>{path}</Text>
+            {/* <Image
+                source={{ uri:'https://famesfx.com/footerlogo.jpeg' }}
+                style={styles.imageStyle}
+            /> */}
         </View>
     );
 }

@@ -217,20 +217,24 @@ export default function PageOneE({ navigation }) {
                         title="Submit"
                         color="#214d77"
                         onPress={handleSubmit}
+                        style={{
+                            borderRadius: 10
+
+                        }}
                     />
                 </View>
 
-                <TouchableOpacity >
+                <TouchableOpacity style={styles.nextButton}>
                     <Icon
-                        name="chevron-right"
-                        size={60}
+                        name="chevron-right-box"
+                        size={40}
                         color="#214d77"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwog')}
                     />
+
                 </TouchableOpacity>
             </View>
-        
         </ ScrollView>
     )
 }
@@ -266,7 +270,9 @@ const styles = StyleSheet.create({
         width: '100%',
         borderColor: 'grey',
         textAlignVertical: 'top',
-        color: 'black'
+        color: 'black',
+        borderRadius: 5
+
 
 
         // backgroundColor:'black'
@@ -279,7 +285,9 @@ const styles = StyleSheet.create({
         height: 75,
         borderColor: 'grey',
         textAlignVertical: 'top',
-        color: 'black'
+        color: 'black',
+        borderRadius: 5
+
 
 
         // backgroundColor:'black'
@@ -292,7 +300,9 @@ const styles = StyleSheet.create({
         height: 95,
         borderColor: 'grey',
         textAlignVertical: 'top',
-        color: 'black'
+        color: 'black',
+        borderRadius: 5
+
 
 
         // backgroundColor:'black'
@@ -314,5 +324,26 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end'
 
 
+    },
+    nextButton: {
+
+        height: 35,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+        marginRight: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
+
+
     }
+
 });

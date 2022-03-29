@@ -272,13 +272,17 @@ const data={
                   title="Submit"
                       color="#214d77"
                   onPress={handleSubmit}
+                  style={{
+                      borderRadius: 10
+
+                  }}
               />
               </View>
              
-              <TouchableOpacity >
+              <TouchableOpacity  style={styles.nextButton}>
                   <Icon
-                      name="chevron-right"
-                      size={60}
+                      name="chevron-right-box"
+                      size={40}
                       color="#214d77"
                       iconStyle={{}}
                       onPress={() => navigation.navigate('pagetwo')}
@@ -314,6 +318,8 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
 
         elevation: 5,
+      
+
     },
     input: {
       
@@ -322,7 +328,8 @@ const styles = StyleSheet.create({
         height:40,
         borderColor:'grey',
         textAlignVertical: 'top',
-        color: 'black'
+        color: 'black',
+        borderRadius:5
 
         // backgroundColor:'black'
       
@@ -334,7 +341,9 @@ const styles = StyleSheet.create({
         height: 75,
         borderColor: 'grey',
         textAlignVertical: 'top',
-        color:'black'
+        color:'black',
+        borderRadius: 5
+
         // backgroundColor:'black'
 
     },
@@ -351,8 +360,30 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         flexDirection:'row',
         alignItems:'center',
-        justifyContent:'flex-end'
+        justifyContent:'flex-end',
+      
      
 
+    },
+    nextButton:{
+   
+        height:35,
+        borderRadius:10,
+        justifyContent:'center',
+        alignItems:'center',
+        alignContent:'center',
+        marginRight:10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
+ 
+
     }
+
 });

@@ -195,27 +195,31 @@ export default function PageOneZF({ navigation }) {
             </TouchableWithoutFeedback>
             <Text style={{ fontSize: 9, color: 'red', fontWeight: 'bold', textAlign: 'center' }}>{text15 && text15}</Text>
 
-
             <View style={styles.submitContainer}>
                 <View style={{ width: "40%", marginRight: '20%' }}>
                     <Button
                         title="Submit"
                         color="#214d77"
                         onPress={handleSubmit}
+                        style={{
+                            borderRadius: 10
+
+                        }}
                     />
                 </View>
 
-                <TouchableOpacity >
+                <TouchableOpacity style={styles.nextButton}>
                     <Icon
-                        name="chevron-right"
-                        size={60}
+                        name="chevron-right-box"
+                        size={40}
                         color="#214d77"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwozf1')}
                     />
+
                 </TouchableOpacity>
             </View>
-
+          
 
 
 
@@ -261,7 +265,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 40,
         borderColor: 'grey',
-        color: 'black'
+        color: 'black',
+        borderRadius: 5
+
 
         // backgroundColor:'black'
 
@@ -272,7 +278,10 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 75,
         borderColor: 'grey',
-        color: 'black'
+        color: 'black',
+       
+        borderRadius: 5
+
 
         // backgroundColor:'black'
 
@@ -291,6 +300,26 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-end'
+
+
+    },
+    nextButton: {
+
+        height: 35,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+        marginRight: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
 
 
     }

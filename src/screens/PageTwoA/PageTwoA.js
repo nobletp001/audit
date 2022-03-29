@@ -212,10 +212,11 @@ export default function PageTwoA({ navigation }) {
                     style={styles.imageStyle}
                 />}
             </View>
+        
             <TouchableOpacity style={styles.arrowNext}>
                 <Icon
-                    name="chevron-right"
-                    size={60}
+                    name="chevron-right-box"
+                    size={40}
                     color="#214d77"
                     iconStyle={{}}
                     onPress={() => navigation.navigate('pagetwob')}
@@ -385,7 +386,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 40,
 
         alignItems: 'flex-end',
-        marginBottom: 30
+        marginBottom: 30,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
     },
     imageStyle: {
         width: 200,
