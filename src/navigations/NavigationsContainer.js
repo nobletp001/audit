@@ -224,7 +224,7 @@ function MyStack() {
                 }}
             /><Stack.Screen name="pagetwox" component={PageTwoX}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>SAID
+                    title: <Text style={commonStyles.headerTitleStyle}>SIAD
                     </Text>
                 }}
             />

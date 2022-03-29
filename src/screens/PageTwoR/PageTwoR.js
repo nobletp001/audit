@@ -69,8 +69,8 @@ export default function PageTwoR({ navigation }) {
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input2}
-                            onChangeText={onChangeText}
-                            value={text}
+                            onChangeText={onChangeText1}
+                            value={text1}
                         />
                     </View>
 
@@ -82,8 +82,8 @@ export default function PageTwoR({ navigation }) {
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input1}
-                            onChangeText={onChangeText}
-                            value={text}
+                            onChangeText={onChangeText2}
+                            value={text2}
                         />
                     </View>
 
@@ -95,8 +95,8 @@ export default function PageTwoR({ navigation }) {
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input}
-                            onChangeText={onChangeText}
-                            value={text}
+                            onChangeText={onChangeText3}
+                            value={text3}
                         />
                     </View>
 
@@ -108,8 +108,8 @@ export default function PageTwoR({ navigation }) {
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input}
-                            onChangeText={onChangeText}
-                            value={text}
+                            onChangeText={onChangeText4}
+                            value={text4}
                         />
                     </View>
 
