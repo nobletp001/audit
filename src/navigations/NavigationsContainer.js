@@ -38,6 +38,8 @@ import PageTwoU from '../screens/PageTwoU/PageTwoU';
 import PageTwoV from '../screens/PageTwoV/PageTwoV';
 import PageTwoX from '../screens/PageTwoX/PageTwoX';
 import PageTwoY from '../screens/PageTwoY/PageTwoY';
+import PageTwoYA from '../screens/PageTwoYA/PageTwoYA';
+import PageTwoYB from '../screens/PageTwoYB/PageTwoYB';
 import PageTwoZ from '../screens/PageTwoZ/PageTwoZ';
 import PageTwoZA from '../screens/PageTwoZA/PageTwoZA';
 import PageTwoZB from '../screens/PageTwoZB/PageTwoZB';
@@ -224,13 +226,25 @@ function MyStack() {
                 }}
             /><Stack.Screen name="pagetwox" component={PageTwoX}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>SAID
+                    title: <Text style={commonStyles.headerTitleStyle}>SIAD
                     </Text>
                 }}
             />
             <Stack.Screen name="pagetwoy" component={PageTwoY}
                 options={{
                     title: <Text style={commonStyles.headerTitleStyle}>FIBER
+                    </Text>
+                }}
+            />
+            <Stack.Screen name="pagetwoya" component={PageTwoYA}
+                options={{
+                    title: <Text style={commonStyles.headerTitleStyle}>Ciena Overall
+                    </Text>
+                }}
+            />  
+            <Stack.Screen name="pagetwoyb" component={PageTwoYB}
+                options={{
+                    title: <Text style={commonStyles.headerTitleStyle}>Ciena CCLI Code
                     </Text>
                 }}
             />
