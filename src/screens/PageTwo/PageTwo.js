@@ -217,7 +217,7 @@ export default function PageTwo({ navigation }) {
                   size={40}
                   color="#214d77"
                   iconStyle={{}}
-                  onPress={() => navigation.navigate('pagetwozf')}
+                  onPress={() => navigation.navigate('pagetwoa')}
               />
           </TouchableOpacity>
           <Modal
