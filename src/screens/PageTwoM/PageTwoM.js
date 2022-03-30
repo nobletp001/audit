@@ -13,6 +13,8 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector, useDispatch } from 'react-redux';
 import { pagetwoMAction } from '../../Store/AuditSlice';
+Icon.loadFont();
+
 export default function PageTwoM({ navigation }) {
 
     const [text, onChangeText] = React.useState("");
@@ -49,7 +51,9 @@ export default function PageTwoM({ navigation }) {
         < ScrollView style={styles.container} keyboardShouldPersistTaps='handled'>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Is there room in any rack, except the CRAN active rack (if applicable), for a new 12 fiber LGX panel for Mobility (Max of 2 Rack Units)?Note: Preferable in existing rack housing BBUs.Please take photo of entire rack: </Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}> Where is the Wireline Fiber Demarc Location?
+                        (Indoor or Outdoor) (Wall, Rack, H-Frame or etc.):
+ </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input1}
@@ -141,6 +145,7 @@ export default function PageTwoM({ navigation }) {
                         name="chevron-right-box"
                         size={40}
                         color="#214d77"
+                        type="MaterialCommunityIcons"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwon')}
                     />

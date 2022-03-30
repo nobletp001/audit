@@ -13,6 +13,7 @@ import {
 import { useSelector, useDispatch } from 'react-redux';
 import {   pagetwoZFAction } from '../../Store/AuditSlice';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+Icon.loadFont();
 
 export default function PageOneZF({ navigation }) {
 
@@ -107,7 +108,7 @@ export default function PageOneZF({ navigation }) {
 
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>- Converter count: </Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Converter count: </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input}
@@ -137,7 +138,7 @@ export default function PageOneZF({ navigation }) {
 
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Is there a remote breaker panel?What model and how many empty slots?: </Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Is there a remote breaker panel? What model and how many empty slots?: </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input}
@@ -213,6 +214,7 @@ export default function PageOneZF({ navigation }) {
                         name="chevron-right-box"
                         size={40}
                         color="#214d77"
+                        type="MaterialCommunityIcons"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwozfa')}
                     />

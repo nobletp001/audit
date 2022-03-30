@@ -13,6 +13,7 @@ import {
 import { useSelector, useDispatch } from 'react-redux';
 import { pagetwoZFAAction } from '../../Store/AuditSlice';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+Icon.loadFont();
 
 export default function PageOneZFA({ navigation }) {
 
@@ -92,6 +93,7 @@ export default function PageOneZFA({ navigation }) {
                         name="chevron-right-box"
                         size={40}
                         color="#214d77"
+                        type="MaterialCommunityIcons"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwozf1')}
                     />

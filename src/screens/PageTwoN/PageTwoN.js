@@ -15,6 +15,8 @@ import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { PermissionsAndroid } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { pagetwoNAction } from '../../Store/AuditSlice';
+Icon.loadFont();
+
 
 
 // const createFormData = (photo, body) => {
@@ -50,8 +52,7 @@ export default function PageTwoN({ navigation }) {
             customButtons: [
                 { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
             ],
-            maxWidth: 1000,
-            maxHeight: 1000,
+            
             quality: 1,
             storageOptions: {
                 skipBackup: true,
@@ -134,8 +135,6 @@ export default function PageTwoN({ navigation }) {
             console.log("Camera & storage permission given");
 
             let options = {
-                maxWidth: 1000,
-                maxHeight: 1000,
                 quality: 1,
                 storageOptions: {
                     skipBackup: true,
@@ -194,6 +193,7 @@ export default function PageTwoN({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 iconStyle={{}}
                             //   onPress={() => navigation.navigate('pagetwo')}
                             />
@@ -214,6 +214,7 @@ export default function PageTwoN({ navigation }) {
             <TouchableOpacity style={styles.arrowNext}>
                 <Icon
                     name="chevron-right-box"
+                    type="MaterialCommunityIcons"
                     size={40}
                     color="#214d77"
                     iconStyle={{}}
@@ -242,6 +243,7 @@ export default function PageTwoN({ navigation }) {
                             </Text>
                             <Icon
                                 name="camera"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}
@@ -259,6 +261,7 @@ export default function PageTwoN({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 style={{ marginLeft: 2, marginTop: 5 }}
 
                             />

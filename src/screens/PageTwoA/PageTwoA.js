@@ -10,6 +10,8 @@ import {
     Alert,
     Image,
 } from 'react-native';
+Icon.loadFont();
+
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { PermissionsAndroid } from 'react-native';
@@ -50,8 +52,7 @@ export default function PageTwoA({ navigation }) {
             customButtons: [
                 { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
             ],
-          maxWidth: 1000,
-            maxHeight: 1000,
+         
             quality:1,
             maxHeight: 256,
             storageOptions: {
@@ -135,8 +136,7 @@ export default function PageTwoA({ navigation }) {
             console.log("Camera & storage permission given");
 
             let options = {
-                  maxWidth: 1000,
-            maxHeight: 1000,
+               
             quality:1,
                 storageOptions: {
                     skipBackup: true,
@@ -193,6 +193,7 @@ export default function PageTwoA({ navigation }) {
                         <Text style={styles.headingLight}> Upload Picture
                             <Icon
                                 name="upload"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 iconStyle={{}}
@@ -218,6 +219,7 @@ export default function PageTwoA({ navigation }) {
                     name="chevron-right-box"
                     size={40}
                     color="#214d77"
+                    type="MaterialCommunityIcons"
                     iconStyle={{}}
                     onPress={() => navigation.navigate('pagetwob')}
                 />
@@ -243,6 +245,7 @@ export default function PageTwoA({ navigation }) {
                             </Text>
                             <Icon
                                 name="camera"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}
@@ -258,6 +261,7 @@ export default function PageTwoA({ navigation }) {
                             </Text>
                             <Icon
                                 name="upload"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}

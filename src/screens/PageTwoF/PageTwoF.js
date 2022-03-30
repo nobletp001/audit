@@ -13,6 +13,7 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useDispatch } from 'react-redux';
 import {    pagetwoFAction } from '../../Store/AuditSlice';
+Icon.loadFont();
 
 
 
@@ -71,6 +72,7 @@ export default function PageOneE({ navigation }) {
                 <View style={styles.tableContainer}>
                     <View style={{ flex: 1.5, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 2 }}><Text style={styles.tableText}>Where is the Wireline Fiber Demarc Location?
                         (Indoor or Outdoor) (Wall, Rack, H-Frame or etc.):
+
                     </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
@@ -85,7 +87,8 @@ export default function PageOneE({ navigation }) {
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
                     <View style={{ flex: 1.5, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 2 }}><Text style={styles.tableText}>What direction is the Wireline Fiber Demarc facing
-                        (North, South, West or East)?:
+                        (North, South, West or East)?: 
+
                     </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
@@ -99,7 +102,8 @@ export default function PageOneE({ navigation }) {
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1.5, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 2 }}><Text style={styles.tableText}>How many fibers are terminated on the front of the existing fiber terminal & how many open ports are spare?Need 4 open ports for the new dark fibers: </Text></View>
+                    <View style={{ flex: 1.5, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 2 }}><Text style={styles.tableText}>
+                        How many fibers are terminated on the front of the existing fiber terminal & how many open ports are spare?Need 4 open ports for the new dark fibers: </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input3}
@@ -125,7 +129,7 @@ export default function PageOneE({ navigation }) {
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1.5, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 2 }}><Text style={styles.tableText}>Is there enough space in the conduit(s) between the NEMA box and the Mobility shelter or cabinet (if outdoor site) for two 2 single fiber or one 4 fiber jumper?: </Text></View>
+                    <View style={{ flex: 1.5, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 2 }}><Text style={styles.tableText}> Is there enough space in the conduit(s) between the NEMA box and the Mobility shelter or cabinet (if outdoor site) for two 2 single fiber or one 4 fiber jumper?: </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input3}
@@ -229,6 +233,7 @@ export default function PageOneE({ navigation }) {
                         name="chevron-right-box"
                         size={40}
                         color="#214d77"
+                        type="MaterialCommunityIcons"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwog')}
                     />

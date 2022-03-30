@@ -150,17 +150,17 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwog" component={PageTwoG}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>Wireline Fiber Demar Location(Wide View with enyire H-Frame</Text>
+                    title: <Text style={commonStyles.headerTitleStyle}>Wireline Fiber Demarc Location (Wide View with entire H-Frame</Text>
                 }}
             />
             <Stack.Screen name="pagetwoh" component={PageTwoH}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>Fiber terminal/Ped(Reg View)</Text>
+                    title: <Text style={commonStyles.headerTitleStyle}>Fiber terminal/Ped (Reg View)</Text>
                 }}
             />
             <Stack.Screen name="pagetwoi" component={PageTwoI}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>NEMA BOX(near DeMarc Location)</Text>
+                    title: <Text style={commonStyles.headerTitleStyle}>Fiber terminal/Ped (Reg View)</Text>
                 }}
             />
             <Stack.Screen name="pagetwoj" component={PageTwoJ}
@@ -180,7 +180,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwom" component={PageTwoM}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>New Mobility LgX</Text>
+                    title: <Text style={commonStyles.headerTitleStyle}>New Mobility LgX Questions</Text>
                 }}
             />
             <Stack.Screen name="pagetwon" component={PageTwoN}
@@ -205,7 +205,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwor" component={PageTwoR}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>8300 Dafi installation
+                    title: <Text style={commonStyles.headerTitleStyle}>8300 Dafi installation Questions
                     </Text>
                 }}
             />
@@ -274,13 +274,13 @@ function MyStack() {
               <Stack.Screen name="pagetwozc" component={PageTwoZC}
                 
             options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>LTE 6601
+                title: <Text style={commonStyles.headerTitleStyle}>LTE 5216
                     </Text>
                 }}
             /> 
               <Stack.Screen name="pagetwozd" component={PageTwoZD}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}> LTE 6601
+                    title: <Text style={commonStyles.headerTitleStyle}> LTE 5216 
                     </Text>
                 }}
             />   
@@ -292,7 +292,7 @@ function MyStack() {
             />  
              <Stack.Screen name="pagetwozf" component={PageTwoZF}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>Wareline Transport:Fiber Demar and Conduits
+                    title: <Text style={commonStyles.headerTitleStyle}>Power Plant Information
                     </Text>
                 }}
             />
@@ -358,7 +358,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwozf12" component={PageTwoZF12}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}> Additional Photos - SAID Make & Model
+                    title: <Text style={commonStyles.headerTitleStyle}> Additional Photos - SIAD Make & Model
                     </Text>
                 }}
             />
