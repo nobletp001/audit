@@ -3,7 +3,8 @@ import React from 'react';
 import { PermissionsAndroid } from 'react-native';
 import { Alert } from 'react-native';
 import uuid from 'react-native-uuid';
-import FileViewer from 'react-native-file-viewer';
+// import { Dirs, FileSystem } from 'react-native-file-access';
+
 import {
 
     StyleSheet,
@@ -57,6 +58,8 @@ function HomeScreen() {
     const pagetwoZD = dataState.pagetwoZD?.uri?.length < 1 ? 'lo' : dataState.pagetwoZD?.uri
     const pagetwoZE = dataState.pagetwoZE?.uri?.length < 1 ? 'lo' : dataState.pagetwoZE?.uri
     const pagetwoZF = dataState.pagetwoZF
+    const pagetwoZFA = dataState.pagetwoZFA
+
     const pagetwoZF1 = dataState.pagetwoZF1?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF1?.uri
     const pagetwoZF2 = dataState.pagetwoZF2?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF2?.uri
     const pagetwoZF3 = dataState.pagetwoZF3?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF3?.uri
@@ -66,6 +69,8 @@ function HomeScreen() {
     const pagetwoZF7 = dataState.pagetwoZF7?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF7?.uri
     const pagetwoZF8 = dataState.pagetwoZF8?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF8?.uri
     const pagetwoZF9 = dataState.pagetwoZF9?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF9?.uri
+    const pagetwoZF12 = dataState.pagetwoZF12?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF12?.uri
+
     const pagetwoZF10 = dataState.pagetwoZF10
 // console.log(pagetwoZF10)
 
@@ -833,6 +838,32 @@ N/A
             </table>
           
       </div>
+
+
+ <div style="height:100%">
+
+
+            <table id="customers">
+                <tr>
+                    <th colspan="2">SAID Information</th>
+
+                </tr>
+                <tr>
+                    <td>Power plant brand and model</td>
+                    <td> ${pagetwoZFA.text ? pagetwoZFA.text : 'N/A'}</td>
+            
+                </tr>
+                <tr>
+                    <td>Main Power plant voltage (48V or 24V)</td>
+                     <td> ${pagetwoZFA.text1 ? pagetwoZFA.text1 : 'N/A'}</td>
+
+                </tr>
+                 
+               
+            </table>
+
+      </div>
+
  <div style="height:100%">
 <div  style="height:380px" id="photoCon">
 <div  id="photo1">
@@ -949,7 +980,7 @@ N/A
 </div>
 
  <div style="height:100%">
-<div  style="height:680px" id="photoCon">
+<div  style="height:380px" id="photoCon">
 <div  id="photo1">
 Photo Log – Power Plant
 </div >
@@ -958,6 +989,19 @@ Battery Manufacturing Date
 </div>
 ${pagetwoZF9.length > 6 ? ` <div id="imgCon">
 <img id="images" src='${pagetwoZF9}' alt="i" srcset="" />
+</div>` : ` <div id="imgCon">
+N/A
+</div>`}
+</div>
+<div style="height:380px" id="photoCon">
+    <div id="photo1">
+Photo Log - Additional Phto 
+    </div>
+    <div id="photo2">
+Additional Phto - SAID Make & Model
+    </div>
+${pagetwoZF12.length > 6 ? ` <div id="imgCon">
+<img id="images" src='${pagetwoZF12}' alt="i" srcset="" />
 </div>` : ` <div id="imgCon">
 N/A
 </div>`}
@@ -1033,28 +1077,17 @@ Additional Photos
             }
         }
 
+     
 
         let file = await RNHTMLtoPDF.convert(options)
-        setLoading('')
-        setPath(file.filePath)
+      
+
+        setLoading('sucessful download')
+          setPath(file.filePath)
         console.log(file.filePath);
-        Alert.alert('Successfully Exported', 'Path:' + file.filePath, [
-            { text: 'Cancel', style: 'cancel' },
-            { text: 'Open', onPress: () => openFile(file.filePath) }
-        ], { cancelable: true });
+//         const text = await FileSystem.mkdir(Dirs.DocumentDir + file.filePath);
+//    console.log(text)
 
-    }
-
-
-    const openFile = (filepath) => {
-        const path = filepath;// absolute-path-to-my-local-file.
-        FileViewer.open(path)
-            .then(() => {
-                // success
-            })
-            .catch(error => {
-                // error
-            });
     }
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

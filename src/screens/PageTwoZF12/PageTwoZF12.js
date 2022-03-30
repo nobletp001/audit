@@ -14,7 +14,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { PermissionsAndroid } from 'react-native';
 import { useDispatch } from 'react-redux';
-import {  pagetwoZF9Action } from '../../Store/AuditSlice';
+import { pagetwoZF12Action } from '../../Store/AuditSlice';
 
 
 // const createFormData = (photo, body) => {
@@ -34,7 +34,7 @@ import {  pagetwoZF9Action } from '../../Store/AuditSlice';
 //     return data;
 // };
 
-export default function PageTwoZF9({ navigation }) {
+export default function PageTwoZF12({ navigation }) {
 
     const [modalVisible, setModalVisible] = React.useState(false);
     const dispatch = useDispatch()
@@ -91,7 +91,7 @@ export default function PageTwoZF9({ navigation }) {
                         uri: asset.uri
                     })
 
-                    dispatch( pagetwoZF9Action({
+                    dispatch(pagetwoZF12Action({
                         uri: asset.uri
                     }))
                 });
@@ -162,7 +162,7 @@ export default function PageTwoZF9({ navigation }) {
                             uri: asset.uri
                         })
 
-                        dispatch( pagetwoZF9Action({
+                        dispatch(pagetwoZF12Action({
                             uri: asset.uri
                         }))
                     });
@@ -217,10 +217,10 @@ export default function PageTwoZF9({ navigation }) {
                     size={40}
                     color="#214d77"
                     iconStyle={{}}
-                    onPress={() => navigation.navigate('pagetwozf12')}
+                    onPress={() => navigation.navigate('pagetwozf10')}
                 />
             </TouchableOpacity>
-          
+
             <Modal
                 animationType="slide"
                 transparent={true}

@@ -16,15 +16,18 @@
     "@reduxjs/toolkit": "^1.8.0",
     "react": "17.0.2",
     "react-native": "0.67.4",
+    "react-native-file-access": "^2.3.0",
     "react-native-file-viewer": "^2.1.5",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-html-to-pdf": "^0.12.0",
     "react-native-image-picker": "^4.7.3",
     "react-native-safe-area-context": "3.3.2",
+    "react-native-scoped-storage": "^1.9.2",
     "react-native-screens": "~3.8.0",
     "react-native-uuid": "^2.0.1",
     "react-native-vector-icons": "^9.1.0",
     "react-redux": "^7.2.6"
+   
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

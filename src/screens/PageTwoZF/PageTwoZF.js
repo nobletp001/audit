@@ -214,7 +214,7 @@ export default function PageOneZF({ navigation }) {
                         size={40}
                         color="#214d77"
                         iconStyle={{}}
-                        onPress={() => navigation.navigate('pagetwozf1')}
+                        onPress={() => navigation.navigate('pagetwozfa')}
                     />
 
                 </TouchableOpacity>

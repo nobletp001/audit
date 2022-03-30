@@ -53,6 +53,12 @@ const initialState = {
         text9: '',
       
     },
+    pagetwoFA: {
+        text: '',
+        text1: '',
+       
+
+    },
     pagetwoG: {
        
         uri: ''
@@ -213,6 +219,10 @@ const initialState = {
     },
     pagetwoZF9: {
         
+        uri: ''
+    },
+    pagetwoZF12: {
+
         uri: ''
     },
     pagetwoZF10:[
@@ -396,6 +406,11 @@ console.log({payload})
             // console.log({ payload })
             state.pagetwoZF = payload
         },
+        pagetwoZFAAction: (state, { payload }) => {
+
+            // console.log({ payload })
+            state.pagetwoZFA = payload
+        },
         pagetwoZF1Action: (state, { payload }) => {
 
             // console.log({ payload })
@@ -441,6 +456,11 @@ console.log({payload})
             // console.log({ payload })
             state.pagetwoZF9 = payload
         },
+        pagetwoZF12Action: (state, { payload }) => {
+
+            // console.log({ payload })
+            state.pagetwoZF12 = payload
+        },
         pagetwoZF10Action: (state, { payload }) => {
 
             // console.log('ello',{ payload })
@@ -484,6 +504,7 @@ export const { pageoneAction, pagetwoAction, pagetwoAAction,
     pagetwoZDAction,
     pagetwoZEAction,
     pagetwoZFAction,
+    pagetwoZFAAction,
     pagetwoZF1Action,
     pagetwoZF2Action,
     pagetwoZF3Action,
@@ -493,6 +514,7 @@ export const { pageoneAction, pagetwoAction, pagetwoAAction,
     pagetwoZF7Action,
     pagetwoZF8Action,
     pagetwoZF9Action,
+    pagetwoZF12Action,
     pagetwoZF10Action
     
 

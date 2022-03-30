@@ -47,6 +47,8 @@ import PageTwoZC from '../screens/PageTwoZC/PageTwoZC';
 import PageTwoZD from '../screens/PageTwoZD/PageTwoZD';
 import PageTwoZE from '../screens/PageTwoZE/PageTwoZE';
 import PageTwoZF from '../screens/PageTwoZF/PageTwoZF';
+import PageTwoZFA from '../screens/PageTwoZF/PageTwoZFA';
+
 import PageTwoZF1 from '../screens/PageTwoZF1/PageTwoZF1';
 import PageTwoZF2 from '../screens/PageTwoZF2/PageTwoZF2';
 import PageTwoZF3 from '../screens/PageTwoZF3/PageTwoZF3';
@@ -58,6 +60,9 @@ import PageTwoZF8 from '../screens/PageTwoZF8/PageTwoZF8';
 import PageTwoZF9 from '../screens/PageTwoZF9/PageTwoZF9';
 import PageTwoZF10 from '../screens/PageTwoZF10/PageTwoZF10';
 import PageTwoZF11 from '../screens/PageTwoZF11/PageTwoZF11';
+import PageTwoZF12 from '../screens/PageTwoZF12/PageTwoZF12';
+
+
 
 
 
@@ -291,6 +296,12 @@ function MyStack() {
                     </Text>
                 }}
             />
+            <Stack.Screen name="pagetwozfa" component={PageTwoZFA}
+                options={{
+                    title: <Text style={commonStyles.headerTitleStyle}>SAID Information
+                    </Text>
+                }}
+            />
             <Stack.Screen name="pagetwozf1" component={PageTwoZF1}
                 options={{
                     title: <Text style={commonStyles.headerTitleStyle}>Power plant brand and model
@@ -342,6 +353,12 @@ function MyStack() {
             <Stack.Screen name="pagetwozf9" component={PageTwoZF9}
                 options={{
                     title: <Text style={commonStyles.headerTitleStyle}>ARRIAL VIEW OF COMPOUND(AT&T SHELTER/EQUIPMENTBPLUS VIEW WIRELINE DEMARC)
+                    </Text>
+                }}
+            />
+            <Stack.Screen name="pagetwozf12" component={PageTwoZF12}
+                options={{
+                    title: <Text style={commonStyles.headerTitleStyle}> Additional Photos - SAID Make & Model
                     </Text>
                 }}
             />
