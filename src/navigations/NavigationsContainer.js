@@ -160,7 +160,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwoi" component={PageTwoI}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>Fiber terminal/Ped (Reg View)</Text>
+                    title: <Text style={commonStyles.headerTitleStyle}>NEMA BOX (near Fiber Demarc Location)</Text>
                 }}
             />
             <Stack.Screen name="pagetwoj" component={PageTwoJ}

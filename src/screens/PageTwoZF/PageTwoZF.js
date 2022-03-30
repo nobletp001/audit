@@ -57,7 +57,7 @@ export default function PageOneZF({ navigation }) {
         onChangeText8('')
 
         onChangeText15('submited successfuly')
-        navigation.navigate('pagetwozf1')
+        navigation.navigate('pagetwozfa')
 
 
     }

@@ -58,7 +58,7 @@ function HomeScreen() {
     const pagetwoZD = dataState.pagetwoZD?.uri?.length < 1 ? 'lo' : dataState.pagetwoZD?.uri
     const pagetwoZE = dataState.pagetwoZE?.uri?.length < 1 ? 'lo' : dataState.pagetwoZE?.uri
     const pagetwoZF = dataState.pagetwoZF
-    const pagetwoFA = dataState.pagetwoFA
+    const pagetwoZFA = dataState.pagetwoZFA
 
     const pagetwoZF1 = dataState.pagetwoZF1?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF1?.uri
     const pagetwoZF2 = dataState.pagetwoZF2?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF2?.uri
@@ -852,12 +852,12 @@ N/A
                 </tr>
                 <tr>
                     <td>SAID Make </td>
-                    <td> ${pagetwoFA.text ? pagetwoFA.text : 'N/A'}</td>
+                    <td> ${pagetwoZFA.text ? pagetwoZFA.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
                     <td>SIAD  Model</td>
-                     <td> ${pagetwoFA.text1 ? pagetwoFA.text1 : 'N/A'}</td>
+                     <td> ${pagetwoZFA.text1 ? pagetwoZFA.text1 : 'N/A'}</td>
 
                 </tr>
                  

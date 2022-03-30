@@ -6,6 +6,8 @@ import {
     TouchableOpacity,
     View,
     Modal,
+    Platform
+
 
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -92,33 +94,80 @@ export default function PageTwoZF10({ navigation }) {
     const CameraImage = async () => {
 
 
+        if (Platform.OS === 'android') {
+
+            const grantedcamera = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.CAMERA,
+                {
+                    title: "App Camera Permission",
+                    message: "App needs access to your camera ",
+                    buttonNeutral: "Ask Me Later",
+                    buttonNegative: "Cancel",
+                    buttonPositive: "OK"
+                }
+            );
+            const grantedstorage = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
+                {
+                    title: "App Camera Permission",
+                    message: "App needs access to your camera ",
+                    buttonNeutral: "Ask Me Later",
+                    buttonNegative: "Cancel",
+                    buttonPositive: "OK"
+                }
+            );
+            if (grantedcamera === PermissionsAndroid.RESULTS.GRANTED && grantedstorage === PermissionsAndroid.RESULTS.GRANTED) {
+                console.log("Camera & storage permission given");
+
+                let options = {
+
+                    quality: 1,
+                    storageOptions: {
+                        skipBackup: true,
+                        path: 'images',
+                    },
+                };
+                launchCamera(options, (response) => {
 
 
-        const grantedcamera = await PermissionsAndroid.request(
-            PermissionsAndroid.PERMISSIONS.CAMERA,
-            {
-                title: "App Camera Permission",
-                message: "App needs access to your camera ",
-                buttonNeutral: "Ask Me Later",
-                buttonNegative: "Cancel",
-                buttonPositive: "OK"
+                    if (response.didCancel) {
+                        console.log('User cancelled image picker');
+                    } else if (response.error) {
+                        console.log('ImagePicker Error: ', response.error);
+                    } else if (response.customButton) {
+                        console.log('User tapped custom button: ', response.customButton);
+                        alert(response.customButton);
+                    } else {
+
+                        response.assets.map((asset) => {
+
+                            console.log('uri -> ', asset.uri);
+
+                            setImagePicker([...imagePicker, {
+                                uri: asset.uri
+                            }])
+
+                            dispatch(pagetwoZF10Action({
+                                uri: asset.uri
+                            }))
+                        });
+                        setMgs('Camera taken successfully')
+
+                        setModalVisible(!modalVisible)
+
+
+                    }
+                });
+
+
+            } else {
+                console.log("Camera permission denied");
             }
-        );
-        const grantedstorage = await PermissionsAndroid.request(
-            PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
-            {
-                title: "App Camera Permission",
-                message: "App needs access to your camera ",
-                buttonNeutral: "Ask Me Later",
-                buttonNegative: "Cancel",
-                buttonPositive: "OK"
-            }
-        );
-        if (grantedcamera === PermissionsAndroid.RESULTS.GRANTED && grantedstorage === PermissionsAndroid.RESULTS.GRANTED) {
-            console.log("Camera & storage permission given");
+        }
 
+else{
             let options = {
-                
+
                 quality: 1,
                 storageOptions: {
                     skipBackup: true,
@@ -141,7 +190,7 @@ export default function PageTwoZF10({ navigation }) {
 
                         console.log('uri -> ', asset.uri);
 
-                        setImagePicker([...imagePicker,{
+                        setImagePicker([...imagePicker, {
                             uri: asset.uri
                         }])
 
@@ -152,16 +201,12 @@ export default function PageTwoZF10({ navigation }) {
                     setMgs('Camera taken successfully')
 
                     setModalVisible(!modalVisible)
-                   
-                   
+
+
                 }
             });
 
-
-        } else {
-            console.log("Camera permission denied");
-        }
-
+}
     }
     return (
         <>

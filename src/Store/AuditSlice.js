@@ -185,6 +185,12 @@ const initialState = {
         text8: '',
       
     },
+    pagetwoZFA: {
+        text: '',
+        text1: '',
+        
+
+    },
     pagetwoZF1: {
         
         uri: ''
