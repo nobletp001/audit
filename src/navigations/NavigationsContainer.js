@@ -352,7 +352,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwozf9" component={PageTwoZF9}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>ARRIAL VIEW OF COMPOUND(AT&T SHELTER/EQUIPMENTBPLUS VIEW WIRELINE DEMARC)
+                    title: <Text style={commonStyles.headerTitleStyle}>AERIAL VIEW OF COMPOUND(AT&T SHELTER/EQUIPMENTBPLUS VIEW WIRELINE DEMARC)
                     </Text>
                 }}
             />
