@@ -358,7 +358,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwozf12" component={PageTwoZF12}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}> Additional Photos - SAID Make & Model
+                    title: <Text style={commonStyles.headerTitleStyle}> Additional Photos - SIAD Make & Model
                     </Text>
                 }}
             />

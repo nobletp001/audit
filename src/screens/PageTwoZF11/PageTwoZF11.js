@@ -1000,7 +1000,7 @@ N/A
 Photo Log - Additional Phto 
     </div>
     <div id="photo2">
-Additional Phto - SAID Make & Model
+Additional Phto - SIAD Make & Model
     </div>
 ${pagetwoZF12.length > 6 ? ` <div id="imgCon">
 <img id="images" src='${pagetwoZF12}' alt="i" srcset="" />
