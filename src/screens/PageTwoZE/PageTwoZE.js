@@ -217,7 +217,7 @@ export default function PageTwoZE({ navigation }) {
                     color="#214d77"
                     type="MaterialCommunityIcons"
                     iconStyle={{}}
-                    onPress={() => navigation.navigate('pagetwozf')}
+                    onPress={() => navigation.navigate('pagetwozfa')}
                 />
             </TouchableOpacity>
 

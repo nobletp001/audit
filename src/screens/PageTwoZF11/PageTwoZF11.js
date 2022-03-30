@@ -280,7 +280,9 @@ N/A
 
                 </tr>
                 <tr>
-                    <td style="font-size: 12px;">Fiber terminal/Ped (Reg View)</td>
+                    <td style="font-size: 12px;">Where is the Wireline Fiber Demarc Location?
+(Indoor or Outdoor) (Wall, Rack, H-Frame or etc.):
+</td>
                     <td> ${pagetwoF.text ? pagetwoF.text : 'N/A'}</td>
             
                 </tr>
@@ -367,7 +369,7 @@ N/A
      <div style="height:990px">
 <div  style="height:380px" id="photoCon">
 <div  id="photo1">
-   Photo Log - NEMA BOX
+ Photo Log – LGX
 </div >
 <div id="photo2">
 NEMA BOX (near Fiber Demarc Location)
@@ -380,7 +382,7 @@ N/A
 </div>
 <div style="height:380px" id="photoCon">
     <div id="photo1">
-        Photo-Log -LGX
+        Photo Log - NEMA BOX
     </div>
     <div id="photo2">
 	Fiber Entry Point
@@ -395,7 +397,7 @@ N/A
      <div style="height:100%">
 <div  style="height:380px" id="photoCon">
 <div  id="photo1">
-   Photo Log - NEMA BOX
+ Photo Log - No LGX
 </div >
 <div id="photo2">
 Fiber from NEMA Box Entering Shelter
@@ -408,7 +410,7 @@ N/A
 </div>
 <div style="height:380px" id="photoCon">
     <div id="photo1">
-        Photo-Log -LGX
+     Photo Log – Conduit space to pull additional Fiber
     </div>
     <div id="photo2">
 	Space for two 2 fiber or one 4 fiber jumper
@@ -527,7 +529,7 @@ N/A
                 </tr>
                 <tr>
                     <td style="font-size: 14px;">
-- It is preferable that the new 8300 DaFi & 12 fiber LGX be placed in the same rack.  If yes, was space reserved for the new Mobility LGX by marking off with Blue Tape and Labeling “New LGX Equipment”? 
+ It is preferable that the new 8300 DaFi & 12 fiber LGX be placed in the same rack.  If yes, was space reserved for the new Mobility LGX by marking off with Blue Tape and Labeling “New LGX Equipment”? 
 </td>
                      <td> ${pagetwoR.text1 ? pagetwoR.text1 : 'N/A'}</td>
                 </tr>
@@ -678,7 +680,7 @@ N/A
                 </tr>
                 <tr>
                     <td>
-  How many 5G NR 6630 BBUs are there and where are they located?
+If not in the same rack, what will be the jumper length from the 5G NR 6630 BBUs to the new 8300 DaFi? 
 </td>
                      <td> ${pagetwoZ.text1 ? pagetwoZ.text1 : 'N/A'}</td>
 

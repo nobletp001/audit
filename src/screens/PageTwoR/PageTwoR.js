@@ -53,7 +53,7 @@ export default function PageTwoR({ navigation }) {
         < ScrollView style={styles.container} keyboardShouldPersistTaps='handled'>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>- Is there room in any rack, except the CRAN active & passive racks (if applicable), for a new 8300 DaFi Dimension: 19 (W) x 12 (D) X 7(H)[in](4 Rack Units)?Note: Preferable in existing rack housing BBUs.Please take photo of entire rack.TAPE 8300 LOCATION WITH BLUE TAPE AND LABEL – “8300 DaFi Equipment”: </Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Is there room in any rack, except the CRAN active & passive racks (if applicable), for a new 8300 DaFi Dimension: 19 (W) x 12 (D) X 7(H)[in](4 Rack Units)?Note: Preferable in existing rack housing BBUs.Please take photo of entire rack.TAPE 8300 LOCATION WITH BLUE TAPE AND LABEL – “8300 DaFi Equipment”: </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input2}
@@ -66,7 +66,7 @@ export default function PageTwoR({ navigation }) {
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>- Is there room in any rack, except the CRAN active & passive racks (if applicable), for a new 8300 DaFi Dimension: 19 (W) x 12 (D) X 7(H)[in](4 Rack Units)?Note: Preferable in existing rack housing BBUs.Please take photo of entire rack.TAPE 8300 LOCATION WITH BLUE TAPE AND LABEL – “8300 DaFi Equipment”: </Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}> It is preferable that the new 8300 DaFi & 12 fiber LGX be placed in the same rack.  If yes, was space reserved for the new Mobility LGX by marking off with Blue Tape and Labeling “New LGX Equipment”? </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input2}
@@ -79,7 +79,7 @@ export default function PageTwoR({ navigation }) {
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>- If no, did you identify equipment to be decommissioned to make space	 and take photo: </Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>- If no, did you identify equipment to be decommissioned to make space and take photo: </Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input1}

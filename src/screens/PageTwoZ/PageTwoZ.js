@@ -67,7 +67,7 @@ export default function PageOne({ navigation }) {
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
                 <View style={styles.tableContainer}>
-                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>- If not in the same rack, what will be the jumper length from the 5G NR 6630 BBUs to the new 8300 DaFi?</Text></View>
+                    <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>If not in the same rack, what will be the jumper length from the 5G NR 6630 BBUs to the new 8300 DaFi?</Text></View>
                     <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                         <TextInput
                             style={styles.input1}

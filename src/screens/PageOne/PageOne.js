@@ -157,7 +157,7 @@ const data={
           </TouchableWithoutFeedback>
           <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
               <View style={styles.tableContainer}>
-                  <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Site Technician / Contact: </Text></View>
+                  <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Access issues?(COVID restrictions): </Text></View>
                   <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                       <TextInput
                           style={styles.input}
@@ -183,7 +183,7 @@ const data={
           </TouchableWithoutFeedback>
   <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
               <View style={styles.tableContainer}>
-                  <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Date of Site Visit: </Text></View>
+                  <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}> Date of Site Visit: </Text></View>
                   <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                       <TextInput
                           style={styles.input}
@@ -235,7 +235,7 @@ const data={
           </TouchableWithoutFeedback>
           <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
               <View style={styles.tableContainer}>
-                  <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Did Auditor Sign In AND Out of the Logbook?: </Text></View>
+                  <View style={{ flex: 1, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', padding: 3 }}><Text style={styles.tableText}>Access issues?(COVID restrictions): </Text></View>
                   <View style={{ flex: 1, alignSelf: 'stretch', padding: 3 }}>
                       <TextInput
                           style={styles.input}
