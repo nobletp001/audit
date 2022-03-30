@@ -195,7 +195,7 @@ function MyStack() {
             />
             <Stack.Screen name="pagetwop" component={PageTwoP}
                 options={{
-                    title: <Text style={commonStyles.headerTitleStyle}>Equipement to be decommissioned</Text>
+                    title: <Text style={commonStyles.headerTitleStyle}>Equipment to be decommissioned</Text>
                 }}
             />
             <Stack.Screen name="pagetwoq" component={PageTwoQ}
