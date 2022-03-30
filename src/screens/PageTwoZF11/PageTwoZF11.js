@@ -847,16 +847,16 @@ N/A
 
             <table id="customers">
                 <tr>
-                    <th colspan="2">SAID Information</th>
+                    <th colspan="2">SIAD Information</th>
 
                 </tr>
                 <tr>
-                    <td>Power plant brand and model</td>
+                    <td>SAID Make </td>
                     <td> ${pagetwoFA.text ? pagetwoFA.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
-                    <td>Main Power plant voltage (48V or 24V)</td>
+                    <td>SIAD  Model</td>
                      <td> ${pagetwoFA.text1 ? pagetwoFA.text1 : 'N/A'}</td>
 
                 </tr>
