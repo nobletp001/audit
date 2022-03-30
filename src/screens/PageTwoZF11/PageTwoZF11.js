@@ -3,7 +3,7 @@ import React from 'react';
 import { PermissionsAndroid } from 'react-native';
 import { Alert } from 'react-native';
 import uuid from 'react-native-uuid';
-// import { Dirs, FileSystem } from 'react-native-file-access';
+
 
 import {
 
@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import image from '../../../android/app/src/main/assets/w.jpeg'
-import * as ScopedStorage from "react-native-scoped-storage"
+
 const DEFAULT_IMAGE = Image.resolveAssetSource(image).uri;
 function HomeScreen() {
     const [loading, setLoading] = React.useState('')
@@ -1085,10 +1085,7 @@ Additional Photos
         setLoading('sucessful download')
           setPath(file.filePath)
         console.log(file.filePath);
-        // let dir = await ScopedStorage.openDocumentTree(true);
-        // await ScopedStorage.writeFile(dir.uri, `${file.filePath}.pdf`, "audit/pdf", file.filePath, "base64");
-//         const text = await FileSystem.mkdir(Dirs.DocumentDir + file.filePath);
-//    console.log(text)
+   
 
     }
     return (
