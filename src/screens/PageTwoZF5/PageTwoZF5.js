@@ -15,6 +15,7 @@ import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { PermissionsAndroid } from 'react-native';
 import { useDispatch } from 'react-redux';
 import {  pagetwoZF5Action } from '../../Store/AuditSlice';
+Icon.loadFont();
 
 
 // const createFormData = (photo, body) => {

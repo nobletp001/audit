@@ -13,6 +13,7 @@ import {
 import { useSelector, useDispatch } from 'react-redux';
 import { pagetwoZFAAction } from '../../Store/AuditSlice';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+Icon.loadFont();
 
 export default function PageOneZFA({ navigation }) {
 

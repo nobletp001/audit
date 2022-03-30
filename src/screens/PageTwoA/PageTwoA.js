@@ -10,6 +10,8 @@ import {
     Alert,
     Image,
 } from 'react-native';
+Icon.loadFont();
+
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { PermissionsAndroid } from 'react-native';

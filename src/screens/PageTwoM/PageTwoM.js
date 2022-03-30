@@ -13,6 +13,8 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector, useDispatch } from 'react-redux';
 import { pagetwoMAction } from '../../Store/AuditSlice';
+Icon.loadFont();
+
 export default function PageTwoM({ navigation }) {
 
     const [text, onChangeText] = React.useState("");

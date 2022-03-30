@@ -13,6 +13,7 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useDispatch } from 'react-redux';
 import {    pagetwoFAction } from '../../Store/AuditSlice';
+Icon.loadFont();
 
 
 

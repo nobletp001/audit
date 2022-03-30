@@ -14,7 +14,7 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector, useDispatch } from 'react-redux';
 import { pageoneAction } from '../../Store/AuditSlice';
-
+Icon.loadFont();
 export default function PageOne({ navigation }) {
 
     const [text, onChangeText] = React.useState("");
@@ -282,6 +282,7 @@ const data={
               <TouchableOpacity  style={styles.nextButton}>
                   <Icon
                       name="chevron-right-box"
+                      type="MaterialCommunityIcons"
                       size={40}
                       color="#214d77"
                       iconStyle={{}}

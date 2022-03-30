@@ -16,6 +16,7 @@ import { PermissionsAndroid } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { pagetwoCAction } from '../../Store/AuditSlice';
 
+Icon.loadFont();
 
 // const createFormData = (photo, body) => {
 //     const data = new FormData();
