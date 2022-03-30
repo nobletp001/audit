@@ -1085,7 +1085,8 @@ Additional Photos
         setLoading('sucessful download')
           setPath(file.filePath)
         console.log(file.filePath);
-        let dir = await ScopedStorage.openDocumentTree(true);
+        // let dir = await ScopedStorage.openDocumentTree(true);
+        // await ScopedStorage.writeFile(dir.uri, `${file.filePath}.pdf`, "audit/pdf", file.filePath, "base64");
 //         const text = await FileSystem.mkdir(Dirs.DocumentDir + file.filePath);
 //    console.log(text)
 
