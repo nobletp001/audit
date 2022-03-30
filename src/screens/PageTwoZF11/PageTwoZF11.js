@@ -984,10 +984,10 @@ N/A
  <div style="height:100%">
 <div  style="height:380px" id="photoCon">
 <div  id="photo1">
-Photo Log – Power Plant
+Photo Log -Additional Photo
 </div >
 <div id="photo2">
-Battery Manufacturing Date
+AERIAL VIEW OF COMPOUND(AT&T SHELTER/EQUIPMENTBPLUS VIEW WIRELINE DEMARC)
 </div>
 ${pagetwoZF9.length > 6 ? ` <div id="imgCon">
 <img id="images" src='${pagetwoZF9}' alt="i" srcset="" />
@@ -997,10 +997,10 @@ N/A
 </div>
 <div style="height:380px" id="photoCon">
     <div id="photo1">
-Photo Log - Additional Phto 
+Photo Log - Additional Photo 
     </div>
     <div id="photo2">
-Additional Phto - SIAD Make & Model
+Additional Photo - SIAD Make & Model
     </div>
 ${pagetwoZF12.length > 6 ? ` <div id="imgCon">
 <img id="images" src='${pagetwoZF12}' alt="i" srcset="" />
