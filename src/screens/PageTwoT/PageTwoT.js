@@ -50,8 +50,7 @@ export default function PageTwoT({ navigation }) {
             customButtons: [
                 { name: 'customOptionKey', title: 'Choose Photo from Custom Option' },
             ],
-            maxWidth: 256,
-            maxHeight: 256,
+            
             storageOptions: {
                 skipBackup: true,
                 path: 'images'
@@ -133,8 +132,7 @@ export default function PageTwoT({ navigation }) {
             console.log("Camera & storage permission given");
 
             let options = {
-                  maxWidth: 300,
-              maxHeight: 300,
+                 
                 storageOptions: {
                     skipBackup: true,
                     path: 'images',

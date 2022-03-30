@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import image from '../../../android/app/src/main/assets/w.jpeg'
-
+import FileViewer from 'react-native-file-viewer';
 const DEFAULT_IMAGE = Image.resolveAssetSource(image).uri;
 function HomeScreen() {
     const [loading, setLoading] = React.useState('')
@@ -1085,7 +1085,23 @@ Additional Photos
         setLoading('sucessful download')
           setPath(file.filePath)
         console.log(file.filePath);
-   
+        // console.log(file.filePath);
+        Alert.alert('Successfully Exported', 'Path:' + file.filePath, [
+            { text: 'Cancel', style: 'cancel' },
+            { text: 'Open', onPress: () => openFile(file.filePath) }
+        ], { cancelable: true });
+
+    }
+
+    const openFile = (filepath) => {
+        const path = filepath;// absolute-path-to-my-local-file.
+        FileViewer.open(path)
+            .then(() => {
+                // success
+            })
+            .catch(error => {
+                // error
+            });
 
     }
     return (
