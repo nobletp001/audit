@@ -193,6 +193,7 @@ export default function PageTwoK({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 iconStyle={{}}
                             //   onPress={() => navigation.navigate('pagetwo')}
                             />
@@ -213,6 +214,7 @@ export default function PageTwoK({ navigation }) {
             <TouchableOpacity style={styles.arrowNext}>
                 <Icon
                     name="chevron-right-box"
+                    type="MaterialCommunityIcons"
                     size={40}
                     color="#214d77"
                     iconStyle={{}}
@@ -241,6 +243,7 @@ export default function PageTwoK({ navigation }) {
                             </Text>
                             <Icon
                                 name="camera"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}
@@ -256,6 +259,7 @@ export default function PageTwoK({ navigation }) {
                             </Text>
                             <Icon
                                 name="upload"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}

@@ -230,6 +230,7 @@ export default function PageOneE({ navigation }) {
                         name="chevron-right-box"
                         size={40}
                         color="#214d77"
+                        type="MaterialCommunityIcons"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwog')}
                     />

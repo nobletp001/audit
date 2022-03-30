@@ -193,6 +193,7 @@ export default function PageTwoI({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 iconStyle={{}}
                             //   onPress={() => navigation.navigate('pagetwo')}
                             />
@@ -215,6 +216,7 @@ export default function PageTwoI({ navigation }) {
                     name="chevron-right-box"
                     size={40}
                     color="#214d77"
+                    type="MaterialCommunityIcons"
                     iconStyle={{}}
                     onPress={() => navigation.navigate('pagetwoj')}
                 />
@@ -241,6 +243,7 @@ export default function PageTwoI({ navigation }) {
                             </Text>
                             <Icon
                                 name="camera"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}
@@ -256,6 +259,7 @@ export default function PageTwoI({ navigation }) {
                             </Text>
                             <Icon
                                 name="upload"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}

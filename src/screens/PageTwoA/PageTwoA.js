@@ -193,6 +193,7 @@ export default function PageTwoA({ navigation }) {
                         <Text style={styles.headingLight}> Upload Picture
                             <Icon
                                 name="upload"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 iconStyle={{}}
@@ -218,6 +219,7 @@ export default function PageTwoA({ navigation }) {
                     name="chevron-right-box"
                     size={40}
                     color="#214d77"
+                    type="MaterialCommunityIcons"
                     iconStyle={{}}
                     onPress={() => navigation.navigate('pagetwob')}
                 />
@@ -243,6 +245,7 @@ export default function PageTwoA({ navigation }) {
                             </Text>
                             <Icon
                                 name="camera"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}
@@ -258,6 +261,7 @@ export default function PageTwoA({ navigation }) {
                             </Text>
                             <Icon
                                 name="upload"
+                                type="MaterialCommunityIcons"
                                 size={23}
                                 color="#fff"
                                 style={{ marginLeft: 2, marginTop: 5 }}

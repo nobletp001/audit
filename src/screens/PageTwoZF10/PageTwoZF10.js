@@ -177,6 +177,7 @@ export default function PageTwoZF10({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 iconStyle={{}}
                             //   onPress={() => navigation.navigate('pagetwo')}
                             />
@@ -204,6 +205,7 @@ return(
                     name="chevron-right-box"
                     size={40}
                     color="#214d77"
+                    type="MaterialCommunityIcons"
                     iconStyle={{}}
                     onPress={() => navigation.navigate('pagetwozf11')}
                 />
@@ -233,6 +235,7 @@ return(
                                 name="camera"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 style={{ marginLeft: 2, marginTop: 5 }}
 
                             />
@@ -248,6 +251,7 @@ return(
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 style={{ marginLeft: 2, marginTop: 5 }}
 
                             />

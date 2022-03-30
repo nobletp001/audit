@@ -193,6 +193,7 @@ export default function PageTwoE({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 iconStyle={{}}
                             //   onPress={() => navigation.navigate('pagetwo')}
                             />
@@ -215,6 +216,7 @@ export default function PageTwoE({ navigation }) {
                     name="chevron-right-box"
                     size={40}
                     color="#214d77"
+                    type="MaterialCommunityIcons"
                     iconStyle={{}}
                     onPress={() => navigation.navigate('pagetwof')}
                 />
@@ -243,6 +245,7 @@ export default function PageTwoE({ navigation }) {
                                 name="camera"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 style={{ marginLeft: 2, marginTop: 5 }}
 
                             />
@@ -258,6 +261,7 @@ export default function PageTwoE({ navigation }) {
                                 name="upload"
                                 size={23}
                                 color="#fff"
+                                type="MaterialCommunityIcons"
                                 style={{ marginLeft: 2, marginTop: 5 }}
 
                             />

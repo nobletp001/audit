@@ -143,6 +143,7 @@ export default function PageTwoM({ navigation }) {
                         name="chevron-right-box"
                         size={40}
                         color="#214d77"
+                        type="MaterialCommunityIcons"
                         iconStyle={{}}
                         onPress={() => navigation.navigate('pagetwon')}
                     />
