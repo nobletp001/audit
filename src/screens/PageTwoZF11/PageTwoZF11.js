@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import image from '../../../android/app/src/main/assets/w.jpeg'
-
+import * as ScopedStorage from "react-native-scoped-storage"
 const DEFAULT_IMAGE = Image.resolveAssetSource(image).uri;
 function HomeScreen() {
     const [loading, setLoading] = React.useState('')
@@ -58,7 +58,7 @@ function HomeScreen() {
     const pagetwoZD = dataState.pagetwoZD?.uri?.length < 1 ? 'lo' : dataState.pagetwoZD?.uri
     const pagetwoZE = dataState.pagetwoZE?.uri?.length < 1 ? 'lo' : dataState.pagetwoZE?.uri
     const pagetwoZF = dataState.pagetwoZF
-    const pagetwoZFA = dataState.pagetwoZFA
+    const pagetwoFA = dataState.pagetwoFA
 
     const pagetwoZF1 = dataState.pagetwoZF1?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF1?.uri
     const pagetwoZF2 = dataState.pagetwoZF2?.uri?.length < 1 ? 'lo' : dataState.pagetwoZF2?.uri
@@ -850,12 +850,12 @@ N/A
                 </tr>
                 <tr>
                     <td>Power plant brand and model</td>
-                    <td> ${pagetwoZFA.text ? pagetwoZFA.text : 'N/A'}</td>
+                    <td> ${pagetwoFA.text ? pagetwoFA.text : 'N/A'}</td>
             
                 </tr>
                 <tr>
                     <td>Main Power plant voltage (48V or 24V)</td>
-                     <td> ${pagetwoZFA.text1 ? pagetwoZFA.text1 : 'N/A'}</td>
+                     <td> ${pagetwoFA.text1 ? pagetwoFA.text1 : 'N/A'}</td>
 
                 </tr>
                  
@@ -1085,6 +1085,7 @@ Additional Photos
         setLoading('sucessful download')
           setPath(file.filePath)
         console.log(file.filePath);
+        let dir = await ScopedStorage.openDocumentTree(true);
 //         const text = await FileSystem.mkdir(Dirs.DocumentDir + file.filePath);
 //    console.log(text)
 
