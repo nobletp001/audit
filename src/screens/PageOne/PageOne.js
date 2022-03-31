@@ -71,7 +71,7 @@ const data={
         onChangeText15('submited successfuly')
 
         navigation.navigate('pagetwo')
-
+// aaa
 }
   return (
       < ScrollView style={styles.container} keyboardShouldPersistTaps='handled'>
